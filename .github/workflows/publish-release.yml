@@ -1,0 +1,38 @@
+name: Publish Dark Star release
+
+# Runs only when someone presses "Run workflow" in the Actions tab.
+# It creates and publishes the GitHub release from the files in release/<version>/,
+# which is what the Dark Star page's download button and the game's update check read.
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to publish (folder name under release/, without the v)"
+        required: true
+        default: "62.1"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the files
+        run: |
+          d="release/v${{ inputs.version }}"
+          test -f "$d/DarkStar-v${{ inputs.version }}.vpk"
+          test -f "$d/latest.json"
+          test -f "$d/release-notes.md"
+          sha256sum "$d/DarkStar-v${{ inputs.version }}.vpk"
+      - name: Create and publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          d="release/v${{ inputs.version }}"
+          gh release create "v${{ inputs.version }}" \
+            "$d/DarkStar-v${{ inputs.version }}.vpk" "$d/latest.json" \
+            --title "Dark Star v${{ inputs.version }}" \
+            --notes-file "$d/release-notes.md" \
+            --latest

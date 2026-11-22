@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "game": "Dark Star",
+  "title_id": "MDWR00001",
+  "latest_version": "62.1",
+  "app_ver": "62.10",
+  "released": "2026-11-22",
+  "page_url": "https://division6.net/dark-star/",
+  "notes_url": "https://division6.net/dark-star/#changelog",
+  "files": [
+    {
+      "name": "DarkStar-v62.1.vpk",
+      "kind": "vpk",
+      "version": "62.1",
+      "size": 91457275,
+      "sha256": "7caab39d16db5e41d90712428020f0fb5fb85881d47d4c5c5d2e8a145eb1fd98",
+      "url": "https://github.com/spiritus5150/DarkStar/releases/download/v62.1/DarkStar-v62.1.vpk"
+    }
+  ],
+  "history": [
+    {
+      "version": "62.1",
+      "app_ver": "62.10",
+      "date": "2026-11-22",
+      "summary": "Launch build: more of the Blender makeover across the maps, flags, weapons and the first-person sleeve. Visuals only; nothing plays differently."
+    },
+    {
+      "version": "62.0",
+      "app_ver": "62.00",
+      "date": "2026-11-20",
+      "summary": "Pre-release: code audit, graphics fixes, a frame governor (Settings > Video > Frame Rate Priority) and a Blender makeover of weapons and map props."
+    },
+    {
+      "version": "61.0",
+      "app_ver": "61.00",
+      "date": "2026-11-20",
+      "summary": "Pre-release: every map gets its own match music, an opening and a closing minute."
+    },
+    {
+      "version": "60.0",
+      "app_ver": "60.00",
+      "date": "2026-11-19",
+      "summary": "Pre-release: the Store and the Exclusive Store, paid in Platinum Stars earned in Matchmaking, ten new characters, the Bot Reset. No real money."
+    },
+    {
+      "version": "59.0",
+      "app_ver": "59.00",
+      "date": "2026-11-19",
+      "summary": "Pre-release: every class worth playing (class levels and mastery, field upgrades, class challenges, role XP)."
+    },
+    {
+      "version": "58.0",
+      "app_ver": "58.00",
+      "date": "2026-11-18",
+      "summary": "Pre-release: the Galactic Games champion's rewards (three new aliens, a plague doctor, plasma weapons in Matchmaking)."
+    },
+    {
+      "version": "57.0",
+      "app_ver": "57.00",
+      "date": "2026-11-18",
+      "summary": "Pre-release: IT'S NOON SOMEWHERE (Elite 3.3), 60 fps by default, fixes from the full audit."
+    },
+    {
+      "version": "56.0",
+      "app_ver": "56.00",
+      "date": "2026-11-17",
+      "summary": "Pre-release: The Sleigh Drop, Christmas from December 1 to 31."
+    },
+    {
+      "version": "55.0",
+      "app_ver": "55.00",
+      "date": "2026-11-16",
+      "summary": "Pre-release: Funland, Lowell Hill and Moon Base rebuilt."
+    },
+    {
+      "version": "54.0",
+      "app_ver": "54.00",
+      "date": "2026-11-16",
+      "summary": "Pre-release: two new maps, High Strung and Tockbury Square."
+    }
+  ]
+}
